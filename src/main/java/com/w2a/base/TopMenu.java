@@ -22,6 +22,7 @@ public class TopMenu{
 	public TopMenu(WebDriver driver) {
 		this.driver = driver;
 	}
+	
 	public void goToHome() {
 
 	}
