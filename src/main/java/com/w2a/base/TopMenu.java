@@ -37,7 +37,6 @@ public class TopMenu{
 
 	public AccountsPage goToAccounts() {
 		//Page.driver.findElement(By.cssSelector("div[data-value='Accounts'] > a")).click();
-		
 		Page.click("crm_menu_account_link_CSS");
 		return new AccountsPage();
 	}
