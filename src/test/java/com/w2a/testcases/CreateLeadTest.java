@@ -14,6 +14,12 @@ public class CreateLeadTest {
 	@Test(dataProviderClass = ExcelReader.class,  dataProvider = "dp2")
 	public void createLeadTest(Hashtable<String,String> data) {
 		LeadsPage lp = Page.menu.goToLeads();
+		try {
+			Thread.sleep(1000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		CreateLeadPage clp = lp.goToCreateLead();
 		clp.createLead(data.get("firstname"));
 	}
